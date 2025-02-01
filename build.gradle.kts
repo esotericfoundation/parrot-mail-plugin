@@ -1,3 +1,4 @@
+import io.papermc.paperweight.userdev.ReobfArtifactConfiguration
 import xyz.jpenilla.resourcefactory.bukkit.BukkitPluginYaml
 
 plugins {
@@ -16,7 +17,7 @@ java {
     toolchain.languageVersion = JavaLanguageVersion.of(21)
 }
 
-paperweight.reobfArtifactConfiguration = io.papermc.paperweight.userdev.ReobfArtifactConfiguration.MOJANG_PRODUCTION
+paperweight.reobfArtifactConfiguration = ReobfArtifactConfiguration.MOJANG_PRODUCTION
 
 dependencies {
     implementation("org.projectlombok:lombok:1.18.30")
