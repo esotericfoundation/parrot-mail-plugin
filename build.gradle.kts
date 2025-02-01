@@ -34,12 +34,6 @@ tasks {
     }
 }
 
-tasks.register<Exec>("runTestServer") {
-    dependsOn("build")
-    workingDir("../../TestServer")
-    commandLine("cmd", "/c", "start.bat")
-}
-
 bukkitPluginYaml {
     main = "net.slqmy.parrot_mail.ParrotMailPlugin"
     prefix = "ParrotMail"
