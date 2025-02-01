@@ -2,12 +2,12 @@ package foundation.esoteric.minecraft.plugins.mail.parrot;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import foundation.esoteric.minecraft.plugins.mail.parrot.event.ParrotLoadStateListener;
 import lombok.Getter;
 import lombok.Setter;
 import foundation.esoteric.minecraft.plugins.mail.parrot.debug.DisplayTestCommand;
 import foundation.esoteric.minecraft.plugins.mail.parrot.debug.GetYawInfoCommand;
 import foundation.esoteric.minecraft.plugins.mail.parrot.debug.ToggleDebugCommand;
-import foundation.esoteric.minecraft.plugins.mail.parrot.event.ParrotLoadOrUnloadListener;
 import foundation.esoteric.minecraft.plugins.mail.parrot.event.ParrotRemoveListener;
 import foundation.esoteric.minecraft.plugins.mail.parrot.event.ParrotRightClickListener;
 import foundation.esoteric.minecraft.plugins.mail.parrot.event.TickEndListener;
@@ -62,7 +62,7 @@ public final class ParrotMailPlugin extends JavaPlugin implements Listener {
     public void onEnable() {
         new ParrotRightClickListener().register();
         new ParrotRemoveListener().register();
-        new ParrotLoadOrUnloadListener().register();
+        new ParrotLoadStateListener().register();
         new TickEndListener().register();
 
         new ToggleDebugCommand().register();

@@ -9,10 +9,10 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.world.ChunkLoadEvent;
 
-public final class ParrotLoadOrUnloadListener implements Listener {
+public final class ParrotLoadStateListener implements Listener {
     private final ParrotMailPlugin plugin;
 
-    public ParrotLoadOrUnloadListener() {
+    public ParrotLoadStateListener() {
         this.plugin = ParrotMailPlugin.getInstance();
     }
 
