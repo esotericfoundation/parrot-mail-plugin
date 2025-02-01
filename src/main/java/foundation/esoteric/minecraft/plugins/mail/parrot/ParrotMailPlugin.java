@@ -9,7 +9,7 @@ import foundation.esoteric.minecraft.plugins.mail.parrot.debug.DisplayTestComman
 import foundation.esoteric.minecraft.plugins.mail.parrot.debug.GetYawInfoCommand;
 import foundation.esoteric.minecraft.plugins.mail.parrot.debug.ToggleDebugCommand;
 import foundation.esoteric.minecraft.plugins.mail.parrot.event.ParrotRemoveListener;
-import foundation.esoteric.minecraft.plugins.mail.parrot.event.ParrotRightClickListener;
+import foundation.esoteric.minecraft.plugins.mail.parrot.event.ParrotInteractListener;
 import foundation.esoteric.minecraft.plugins.mail.parrot.event.TickEndListener;
 import foundation.esoteric.minecraft.plugins.mail.parrot.json.JourneyDataSerializer;
 import foundation.esoteric.minecraft.plugins.mail.parrot.json.UUIDSerializer;
@@ -60,7 +60,7 @@ public final class ParrotMailPlugin extends JavaPlugin implements Listener {
 
     @Override
     public void onEnable() {
-        new ParrotRightClickListener().register();
+        new ParrotInteractListener().register();
         new ParrotRemoveListener().register();
         new ParrotLoadStateListener().register();
         new TickEndListener().register();

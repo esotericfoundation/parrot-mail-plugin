@@ -18,10 +18,10 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.Objects;
 
-public final class ParrotRightClickListener implements Listener {
+public final class ParrotInteractListener implements Listener {
     private final ParrotMailPlugin plugin;
 
-    public ParrotRightClickListener() {
+    public ParrotInteractListener() {
         this.plugin = ParrotMailPlugin.getInstance();
     }
 
