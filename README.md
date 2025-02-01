@@ -1,5 +1,7 @@
 # Parrot Mail Plugin
 
+[![Project Status: Abandoned](./assets/images/badges/status.svg)](./)
+
 A Minecraft Java plugin that adds a parrot mailing system.
 
 ## License
